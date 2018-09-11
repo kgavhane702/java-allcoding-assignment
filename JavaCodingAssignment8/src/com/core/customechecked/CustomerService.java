@@ -1,5 +1,7 @@
 package com.core.customechecked;
 
+import java.util.Scanner;
+
 public class CustomerService {
 	public void findByName(String name) throws NameNotFoundException {
 
@@ -13,12 +15,9 @@ public class CustomerService {
 	public static void main(String[] args) {
 
 		CustomerService obj = new CustomerService();
+		try (Scanner sc = new Scanner(System.in)) {
 
-		try {
-
-			obj.findByName("Kiran");
-			obj.findByName("");
-
+			obj.findByName(sc.nextLine());
 		} catch (NameNotFoundException e) {
 			e.printStackTrace();
 		}
