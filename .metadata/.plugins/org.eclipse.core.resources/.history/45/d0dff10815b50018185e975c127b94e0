@@ -1,0 +1,8 @@
+package com.core;
+
+public class MySingleTonClass {
+
+	private static MySingleTonClass myObj;
+	
+	
+}

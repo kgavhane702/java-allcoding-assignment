@@ -1,0 +1,13 @@
+package com.core;
+
+public class MySingleTonClass {
+
+	private static MySingleTonClass myObj;
+	
+	private MySingleTonClass() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public static MySingleTonClass ge
+	
+}
