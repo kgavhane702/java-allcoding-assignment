@@ -6,11 +6,11 @@ import org.omg.CORBA.PRIVATE_MEMBER;
 
 public enum CityPopulationEnum {
 
-	MAHARASHTRA("Mumbai", 203040), RAJSTHAN("Jaypur", 2834), UNKNOWN("unknown state",000);
+	MAHARASHTRA("Mumbai", 203040), RAJSTHAN("Jaypur", 2834), UNKNOWN("unknown state", 000);
 
 	final private int population;
 	final private String capital;
-	
+
 	private static final Map<String, CityPopulationEnum> reverseLookup;
 
 	private CityPopulationEnum(String capital, int population) {
@@ -25,24 +25,22 @@ public enum CityPopulationEnum {
 	public String getCapital() {
 		return capital;
 	}
-	
-	static
-	{
+
+	static {
 		reverseLookup = new HashMap<>();
-		for(CityPopulationEnum stateInfo : CityPopulationEnum.values())
-		{
-			
+		for (CityPopulationEnum stateInfo : CityPopulationEnum.values()) {
+
 			reverseLookup.put(stateInfo.capital, stateInfo);
-			
+
 		}
-	} 
-	
+	}
+
 	public static String matchFor(String capital) {
-	    if (reverseLookup.containsKey(capital)) {
-	      return reverseLookup.get(capital).name();
-	    }
-	      return UNKNOWN.name();
-	  }
+		if (reverseLookup.containsKey(capital)) {
+			return reverseLookup.get(capital).name();
+		}
+		return UNKNOWN.name();
+	}
 
 	@Override
 	public String toString() {

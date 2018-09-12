@@ -8,11 +8,11 @@ public class BoxMain {
 
 		box.setItem(100);
 		System.out.println(box.getItem());
-		
+
 		Box<String> boxString = new Box<String>();
 		boxString.setItem("White box");
 		System.out.println(boxString.getItem());
-		
+
 	}
 
 }

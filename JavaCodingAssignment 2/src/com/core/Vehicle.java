@@ -1,26 +1,26 @@
 package com.core;
 
 public class Vehicle {
-	private String regno;
+	private String regNumber;
 	private int model;
 
 	public Vehicle(String regno, int model) {
 		super();
-		this.regno = regno;
+		this.regNumber = regno;
 		this.model = model;
 	}
 
 	public void display() {
-		System.out.println("Registration no: " + regno);
+		System.out.println("Registration no: " + regNumber);
 		System.out.println("Model no: " + model);
 	}
 
 	public String getRegno() {
-		return regno;
+		return regNumber;
 	}
 
 	public void setRegno(String regno) {
-		this.regno = regno;
+		this.regNumber = regno;
 	}
 
 	public int getModel() {
@@ -33,7 +33,7 @@ public class Vehicle {
 
 	@Override
 	public String toString() {
-		return "Vehicle [regno=" + regno + ", model=" + model + "]";
+		return "Vehicle [regno=" + regNumber + ", model=" + model + "]";
 	}
 
 }

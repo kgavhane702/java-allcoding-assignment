@@ -6,10 +6,10 @@ public class Switch_Int {
 
 	public static void main(String[] args) {
 
-		Scanner sc = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		String LuckyColor;
 
-		switch (sc.nextInt()) {
+		switch (scanner.nextInt()) {
 		case 1:
 			LuckyColor = "Red";
 			break;

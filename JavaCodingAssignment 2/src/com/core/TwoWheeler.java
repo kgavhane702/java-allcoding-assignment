@@ -4,8 +4,8 @@ public class TwoWheeler extends Vehicle {
 
 	private int noOfWheels;
 
-	public TwoWheeler(String regno, int model, int noOfWheels) {
-		super(regno, model);
+	public TwoWheeler(String regNumber, int model, int noOfWheels) {
+		super(regNumber, model);
 		this.noOfWheels = noOfWheels;
 	}
 

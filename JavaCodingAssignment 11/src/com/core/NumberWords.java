@@ -1,4 +1,5 @@
 package com.core;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -11,50 +12,42 @@ import java.util.Map;
 
 public class NumberWords {
 
-public static void countWords () {
-    String textFileLocation ="C:\\Users\\kgavhan\\Documents\\myfile.txt";
-   
-    Map<String,Integer> n = new HashMap<>();
-    
+	public static void countWords() {
+		String textFileLocation = "C:\\Users\\kgavhan\\Documents\\myfile.txt";
 
-    try {
-    	List<String> words=null;
-    	
-    	BufferedReader br = new BufferedReader(new FileReader(new File(textFileLocation)));
-    	String line = null;
-    	while((line = br.readLine()) !=null)
-    	{
-    		words = null;
-    		System.out.println("Line : "+line); 
-    		
-    		 words = Arrays.asList(line.split("\\s"));
-    		 System.out.println(words);
-    		 for(String newword: words)
-    	    	{
-    	    		if(n.containsKey(newword))
-    	    		{
-    	    			int no=n.get(newword);
-    	    			n.put(newword,++no);
-    	    		}
-    	    		else
-    	    			n.put(newword, 1);
-    	    	}
-    	}
-    	
-    System.out.println(n);
-    	
-        
-    } catch (IOException ioException) {
+		Map<String, Integer> countOfWords = new HashMap<>();
 
-        ioException.printStackTrace();
-    }
+		try {
+			List<String> words = null;
+
+			BufferedReader br = new BufferedReader(new FileReader(new File(textFileLocation)));
+			String line = null;
+			while ((line = br.readLine()) != null) {
+				words = null;
+				System.out.println("Line : " + line);
+
+				words = Arrays.asList(line.split("\\s"));
+				System.out.println(words);
+				for (String newword : words) {
+					if (countOfWords.containsKey(newword)) {
+						int count = countOfWords.get(newword);
+						countOfWords.put(newword, ++count);
+					} else
+						countOfWords.put(newword, 1);
+				}
+			}
+
+			System.out.println(countOfWords);
+
+		} catch (IOException ioException) {
+
+			ioException.printStackTrace();
+		}
+	}
+
+	public static void main(String args[]) {
+		countWords();
+
+	}
+
 }
-
-    public static void main (String args[])
-    {
-        countWords();
-        
-    }
-    
-}
-    

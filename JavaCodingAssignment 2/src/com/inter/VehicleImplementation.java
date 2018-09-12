@@ -2,27 +2,27 @@ package com.inter;
 
 public class VehicleImplementation implements VehicleInterface {
 
-	private String regno;
+	private String regNumber;
 	private int model;
 
-	public VehicleImplementation(String regno, int model) {
+	public VehicleImplementation(String regNumber, int model) {
 		super();
-		this.regno = regno;
+		this.regNumber = regNumber;
 		this.model = model;
 	}
 
 	@Override
 	public void display() {
-		System.out.println("Registration no: " + regno);
+		System.out.println("Registration no: " + regNumber);
 		System.out.println("Model no: " + model);
 	}
 
 	public String getRegno() {
-		return regno;
+		return regNumber;
 	}
 
 	public void setRegno(String regno) {
-		this.regno = regno;
+		this.regNumber = regno;
 	}
 
 	public int getModel() {
@@ -35,7 +35,7 @@ public class VehicleImplementation implements VehicleInterface {
 
 	@Override
 	public String toString() {
-		return "Vehicle [regno=" + regno + ", model=" + model + "]";
+		return "Vehicle [regno=" + regNumber + ", model=" + model + "]";
 	}
 
 }

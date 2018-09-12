@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="com.core.MySingleTonClass"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="com.core.Box"/>
+<fullyQualifiedTypeName name="com.core.b.KeyValueInterface"/>
+<fullyQualifiedTypeName name="com.core.b.KeyValueMain"/>
+<fullyQualifiedTypeName name="com.core.b.KeyValueImplementation"/>
+<fullyQualifiedTypeName name="com.core.DevidByZeroException"/>
+<fullyQualifiedTypeName name="com.core.Division"/>
+<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="org.omg.CORBA.PRIVATE_MEMBER"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="com.core.CityPopulationEnum"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
 </qualifiedTypeNameHistroy>

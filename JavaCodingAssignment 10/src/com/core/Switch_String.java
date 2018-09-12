@@ -2,8 +2,8 @@ package com.core;
 
 public class Switch_String {
 	public static void main(String[] args) {
-		String str = "tdwo";
-		switch (str) {
+		String string = "tdwo";
+		switch (string) {
 		case "one":
 			System.out.println("one");
 			break;

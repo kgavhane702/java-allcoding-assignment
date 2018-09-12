@@ -4,7 +4,7 @@ public class TwoWheeler implements VehicleInterface {
 
 	private int noOfWheels;
 
-	public TwoWheeler(String regno, int model, int noOfWheels) {
+	public TwoWheeler(String regNumber, int model, int noOfWheels) {
 
 		this.noOfWheels = noOfWheels;
 	}

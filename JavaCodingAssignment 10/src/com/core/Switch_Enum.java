@@ -4,9 +4,9 @@ public class Switch_Enum {
 
 	public static void main(String[] args) {
 
-		Fruit c;
-		c = Fruit.WaterMelon;
-		switch (c) {
+		Fruit fruit;
+		fruit = Fruit.WaterMelon;
+		switch (fruit) {
 		case Apple:
 			System.out.println("You choose Apple!");
 			break;

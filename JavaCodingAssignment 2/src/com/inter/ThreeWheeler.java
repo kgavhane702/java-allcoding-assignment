@@ -1,17 +1,17 @@
 package com.inter;
 
 public class ThreeWheeler extends VehicleImplementation {
-	int noofleaf;
+	int noOfWheel;
 
-	public ThreeWheeler(String regno, int model, int noofleaf) {
-		super(regno, model);
-		this.noofleaf = noofleaf;
+	public ThreeWheeler(String regNo, int model, int noOfLeaf) {
+		super(regNo, model);
+		this.noOfWheel = noOfLeaf;
 	}
 
 	@Override
 	public void display() {
 		System.out.println("Three wheeler auto");
 		super.display();
-		System.out.println("No. of leaf:" + noofleaf);
+		System.out.println("No. of leaf:" + noOfWheel);
 	}
 }
