@@ -12,6 +12,7 @@ public enum CityPopulationEnum {
 	final private String capital;
 
 	private static final Map<String, CityPopulationEnum> reverseLookup;
+	private static final Map<Integer, CityPopulationEnum> reverseLookupBypopulation;
 
 	private CityPopulationEnum(String capital, int population) {
 		this.population = population;
@@ -28,9 +29,16 @@ public enum CityPopulationEnum {
 
 	static {
 		reverseLookup = new HashMap<>();
+		reverseLookupBypopulation = new HashMap<>();
 		for (CityPopulationEnum stateInfo : CityPopulationEnum.values()) {
 
 			reverseLookup.put(stateInfo.capital, stateInfo);
+
+		}
+		
+		for (CityPopulationEnum stateInfo : CityPopulationEnum.values()) {
+
+			reverseLookupBypopulation.put(stateInfo.population, stateInfo);
 
 		}
 	}
@@ -38,6 +46,13 @@ public enum CityPopulationEnum {
 	public static String matchFor(String capital) {
 		if (reverseLookup.containsKey(capital)) {
 			return reverseLookup.get(capital).name();
+		}
+		return UNKNOWN.name();
+	}
+	
+	public static String matchFor(Integer population) {
+		if (reverseLookupBypopulation.containsKey(population)) {
+			return reverseLookupBypopulation.get(population).name();
 		}
 		return UNKNOWN.name();
 	}
